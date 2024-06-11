@@ -3,12 +3,12 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "projeto_mlops"
+name = "mlops_project"
 readme = "README.md"
 dynamic = ["dependencies", "version"]
 
 [project.scripts]
-projeto-mlops = "projeto_mlops.__main__:main"
+mlops-project= "mlops_project.__main__:main"
 
 [project.entry-points."kedro.hooks"]
 
@@ -27,14 +27,14 @@ docs = [
 
 [tool.setuptools.dynamic]
 dependencies = {file = "requirements.txt"}
-version = {attr = "projeto_mlops.__version__"}
+version = {attr = "mlops_project.__version__"}
 
 [tool.setuptools.packages.find]
 where = ["src"]
 namespaces = false
 
 [tool.kedro]
-package_name = "projeto_mlops"
+package_name = "mlops_project"
 project_name = "projeto-mlops"
 kedro_init_version = "0.19.5"
 tools = ['Linting', 'Testing', 'Custom Logging', 'Documentation', 'Data Structure', 'Kedro Viz']
@@ -44,7 +44,7 @@ source_dir = "src"
 [tool.pytest.ini_options]
 addopts = """
 --cov-report term-missing \
---cov src/projeto_mlops -ra"""
+--cov src/mlops_project -ra"""
 
 [tool.coverage.report]
 fail_under = 0
