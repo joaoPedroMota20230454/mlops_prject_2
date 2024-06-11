@@ -1,5 +1,6 @@
 # custom ignores
 example/
+todo.txt
 
 
 # Byte-compiled / optimized / DLL files

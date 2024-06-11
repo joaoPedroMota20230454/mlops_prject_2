@@ -1,23 +1,10 @@
-hospital_raw_data:
+raw_data:
   type: pandas.CSVDataset
-  filepath: data\01_raw\diabetic_data.csv
+  filepath: "data/01_raw/diabetic_data.csv"
   load_args:
     sep: ','
     index_col: 'encounter_id'
 
-hospital_cleaned_encoded_data:
+cleaned_data:
   type: pandas.CSVDataset
-  filepath: data\02_intermediate\hospital_cleaned_encoded_data.csv
-    
-
-hospital_train_data:
-  type: pandas.CSVDataset
-  filepath: data\03_primary\hospital_train_data.csv
-
-hospital_val_data:
-  type: pandas.CSVDataset
-  filepath: data\03_primary\hospital_val_data.csv
-
-hospital_test_data:
-  type: pandas.CSVDataset
-  filepath: data\03_primary\hospital_test_data.csv
+  filepath: "data/02_intermediate/cleaned_data.csv"
