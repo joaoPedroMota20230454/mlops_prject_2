@@ -61,7 +61,7 @@ def clean_data(data: pd.DataFrame) -> pd.DataFrame:
     data["miglitol"].replace(med_transform_1, inplace=True)
     data["insulin"].replace(med_transform_1, inplace=True)
     data["glyburide-metformin"].replace(med_transform_1, inplace=True)
-
+    data["pioglitazone"].replace(med_transform_1, inplace=True)
 
     data['acetohexamide'].replace(med_transform_2, inplace=True)
     data['tolbutamide'].replace(med_transform_2, inplace=True)
@@ -82,6 +82,9 @@ def clean_data(data: pd.DataFrame) -> pd.DataFrame:
         "Asian": 3,
         "Hispanic": 4
     }
+
+    data["race"].replace(dict_replace_race, inplace=True)
+
 
     dict_change_transform = {"No": 0, "Ch": 1}
     dict_diabetes_med = {"No": 0, "Yes": 1}
