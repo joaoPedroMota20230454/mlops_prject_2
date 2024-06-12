@@ -1,7 +1,3 @@
-'''
-Functions to clean the data.
-'''
-
 import pandas as pd
 import numpy as np
 
@@ -256,9 +252,9 @@ def fix_readmitted(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-def clean_data(df: pd.DataFrame) -> pd.DataFrame:
+def clean_X(df: pd.DataFrame) -> pd.DataFrame:
     '''
-    Cleans the data.
+    Cleans the feature data, i.e. no target feature.
     
     Args:
         df: pd.DataFrame: Dataframe to clean.
@@ -275,11 +271,24 @@ def clean_data(df: pd.DataFrame) -> pd.DataFrame:
         encode_race,
         encode_medication_columns,
         encode_diabetes_columns,
-        encode_test_results,
-        fix_readmitted
+        encode_test_results
     ]
     
     for func in cleaning_functions:
         df = func(df)
     
     return df
+
+
+def clean_y(df: pd.DataFrame) -> pd.DataFrame:
+    '''
+    Cleans the target data.
+    
+    Args:
+        df: pd.DataFrame: Dataframe to clean.
+    
+    Returns:
+        pd.DataFrame: Cleaned dataframe.
+    '''
+    
+    return fix_readmitted(df)
