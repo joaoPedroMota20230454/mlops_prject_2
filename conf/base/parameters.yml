@@ -6,13 +6,6 @@ random_state: 42
 
 
 # ***************************************
-# Data Ingestion Parameters
-# ***************************************
-
-raw_data_filepath: "data/01_raw/diabetic_data.csv"
-
-
-# ***************************************
 # Data Split Parameters
 # ***************************************
 

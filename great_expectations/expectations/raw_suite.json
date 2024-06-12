@@ -1,0 +1,29 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "raw_suite",
+  "expectations": [
+    {
+      "expectation_type": "expect_column_values_to_be_unique",
+      "kwargs": {
+        "column": "encounter_id"
+      },
+      "meta": {}
+    }
+  ],
+  "ge_cloud_id": null,
+  "meta": {
+    "citations": [
+      {
+        "batch_request": {
+          "data_asset_name": "diabetic_data.csv",
+          "data_connector_name": "default_inferred_data_connector_name",
+          "datasource_name": "raw_datasource",
+          "limit": 1000
+        },
+        "citation_date": "2024-06-12T18:00:41.775916Z",
+        "comment": "Created suite added via CLI"
+      }
+    ],
+    "great_expectations_version": "0.15.12"
+  }
+}

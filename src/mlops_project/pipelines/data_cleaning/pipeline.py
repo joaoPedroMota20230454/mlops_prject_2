@@ -9,27 +9,27 @@ def create_pipeline(**kwargs):
         [
             node(
                 clean_X,
-                inputs='X_train',
-                outputs='X_train_cleaned',
-                name='X_train_cleaning_node',
+                inputs="X_train",
+                outputs="X_train_cleaned",
+                name="X_train_cleaning_node",
             ),
             node(
                 clean_X,
-                inputs='X_test',
-                outputs='X_test_cleaned',
-                name='X_test_cleaning_node',
+                inputs="X_test",
+                outputs="X_test_cleaned",
+                name="X_test_cleaning_node",
             ),
             node(
                 clean_y,
-                inputs='y_train',
-                outputs='y_train_cleaned',
-                name='y_train_cleaning_node',
+                inputs="y_train",
+                outputs="y_train_cleaned",
+                name="y_train_cleaning_node",
             ),
             node(
                 clean_y,
-                inputs='y_test',
-                outputs='y_test_cleaned',
-                name='y_test_cleaning_node',
-            )
+                inputs="y_test",
+                outputs="y_test_cleaned",
+                name="y_test_cleaning_node",
+            ),
         ]
     )

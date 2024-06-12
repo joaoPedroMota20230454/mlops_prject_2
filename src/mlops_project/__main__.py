@@ -1,6 +1,7 @@
 """projeto-mlops file for ensuring the package is executable
 as `projeto-mlops` and `python -m projeto_mlops`
 """
+
 import importlib
 from pathlib import Path
 

@@ -14,7 +14,9 @@ raw_data:
 # Data Testing Catalog
 # ******************************
 
-
+validated_data:
+  type: pandas.CSVDataset
+  filepath: "data/02_intermediate/diabetic_data_validated.csv"
 
 
 # ******************************
@@ -23,19 +25,19 @@ raw_data:
 
 X_train:
   type: pandas.CSVDataset
-  filepath: "data/02_intermediate/X_train.csv"
+  filepath: "data/03_primary/X_train.csv"
 
 X_test:
   type: pandas.CSVDataset
-  filepath: "data/02_intermediate/X_test.csv"
+  filepath: "data/03_primary/X_test.csv"
 
 y_train:
   type: pandas.CSVDataset
-  filepath: "data/02_intermediate/y_train.csv"
+  filepath: "data/03_primary/y_train.csv"
 
 y_test:
   type: pandas.CSVDataset
-  filepath: "data/02_intermediate/y_test.csv"
+  filepath: "data/03_primary/y_test.csv"
 
 
 # ******************************
@@ -44,16 +46,16 @@ y_test:
 
 X_train_cleaned:
   type: pandas.CSVDataset
-  filepath: "data/02_intermediate/X_train_cleaned.csv"
+  filepath: "data/03_primary/X_train_cleaned.csv"
 
 X_test_cleaned:
   type: pandas.CSVDataset
-  filepath: "data/02_intermediate/X_test_cleaned.csv"
+  filepath: "data/03_primary/X_test_cleaned.csv"
 
 y_train_cleaned:
   type: pandas.CSVDataset
-  filepath: "data/02_intermediate/y_train_cleaned.csv"
+  filepath: "data/03_primary/y_train_cleaned.csv"
 
 y_test_cleaned:
   type: pandas.CSVDataset
-  filepath: "data/02_intermediate/y_test_cleaned.csv"
+  filepath: "data/03_primary/y_test_cleaned.csv"
