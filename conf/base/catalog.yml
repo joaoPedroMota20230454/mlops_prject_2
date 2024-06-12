@@ -1,3 +1,7 @@
+# ******************************
+# Data Ingestion Catalog
+# ******************************
+
 raw_data:
   type: pandas.CSVDataset
   filepath: "data/01_raw/diabetic_data.csv"
@@ -5,6 +9,51 @@ raw_data:
     sep: ','
     index_col: 'encounter_id'
 
-cleaned_data:
+
+# ******************************
+# Data Testing Catalog
+# ******************************
+
+
+
+
+# ******************************
+# Data Splitting Catalog
+# ******************************
+
+X_train:
   type: pandas.CSVDataset
-  filepath: "data/02_intermediate/cleaned_data.csv"
+  filepath: "data/02_intermediate/X_train.csv"
+
+X_test:
+  type: pandas.CSVDataset
+  filepath: "data/02_intermediate/X_test.csv"
+
+y_train:
+  type: pandas.CSVDataset
+  filepath: "data/02_intermediate/y_train.csv"
+
+y_test:
+  type: pandas.CSVDataset
+  filepath: "data/02_intermediate/y_test.csv"
+
+
+# ******************************
+# Data Cleaning Catalog
+# ******************************
+
+X_train_cleaned:
+  type: pandas.CSVDataset
+  filepath: "data/02_intermediate/X_train_cleaned.csv"
+
+X_test_cleaned:
+  type: pandas.CSVDataset
+  filepath: "data/02_intermediate/X_test_cleaned.csv"
+
+y_train_cleaned:
+  type: pandas.CSVDataset
+  filepath: "data/02_intermediate/y_train_cleaned.csv"
+
+y_test_cleaned:
+  type: pandas.CSVDataset
+  filepath: "data/02_intermediate/y_test_cleaned.csv"
