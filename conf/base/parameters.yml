@@ -6,10 +6,22 @@ random_state: 42
 
 
 # *****************************
-# Hollistic Parameters
+# Data unit Tests Parameters
 # *****************************
 
+# for both
 build_data_docs: False
+
+# before cleaning
+raw_datasource_name: "raw_datasource"
+raw_suite_name: "raw_suite"
+raw_data_asset_name: "diabetic_data"
+
+# after cleaning
+clean_datasource_name: "clean_datasource"
+clean_suite_name: "clean_suite"
+X_train_cleaned_data_asset_name: "X_train_cleaned"
+X_test_cleaned_data_asset_name: "X_test_cleaned"
 
 
 # *****************************

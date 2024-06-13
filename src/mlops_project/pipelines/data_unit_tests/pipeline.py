@@ -9,6 +9,9 @@ def create_pipeline(**kwargs) -> Pipeline:
                 func=test_data,
                 inputs=dict(
                     df='raw_data',
+                    datasource_name='params:raw_datasource_name',
+                    suite_name='params:raw_suite_name',
+                    data_asset_name='params:raw_data_asset_name',
                     build_data_docs='params:build_data_docs'
                 ),
                 outputs="validated_data",

@@ -59,3 +59,16 @@ y_train_cleaned:
 y_test_cleaned:
   type: pandas.CSVDataset
   filepath: "data/03_primary/y_test_cleaned.csv"
+
+
+# **************************************
+# Data Testing After Cleaning Catalog
+# **************************************
+
+X_train_cleaned_validated:
+  type: pandas.CSVDataset
+  filepath: "data/03_primary/X_train_cleaned_validated.csv"
+
+X_test_cleaned_validated:
+  type: pandas.CSVDataset
+  filepath: "data/03_primary/X_test_cleaned_validated.csv"

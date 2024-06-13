@@ -1,9 +1,12 @@
 import pandas as pd
 import great_expectations as gx
-from great_expectations.core import ExpectationConfiguration
-from great_expectations.core.batch import RuntimeBatchRequest, BatchRequest
+from great_expectations.core.batch import BatchRequest
 
-def test_data(df: pd.DataFrame, build_data_docs: bool) -> pd.DataFrame:
+def test_data(df: pd.DataFrame,
+              datasource_name: str,
+              suite_name: str,
+              data_asset_name: str,
+              build_data_docs: bool) -> pd.DataFrame:
     """
     This function is used to test the data using great_expectations.
     
@@ -30,16 +33,16 @@ def test_data(df: pd.DataFrame, build_data_docs: bool) -> pd.DataFrame:
     context = gx.get_context()
     
     batch_request = {
-        'datasource_name': "raw_datasource",  # The datasource name defined in the great_expectations.yml
+        'datasource_name': datasource_name,  # The datasource name defined in the great_expectations.yml
         'data_connector_name': "default_inferred_data_connector_name",  # Also in the yaml
-        'data_asset_name': "diabetic_data.csv",  # The file name or asset name defined in the pattern
+        'data_asset_name': f"{data_asset_name}.csv",  # The file name or asset name defined in the pattern
         'batch_spec_passthrough': {"reader_method": "read_csv"}  # Specify the reader method
     }
     
     # Create the validator to validate the batch
     validator = context.get_validator(
         batch_request=BatchRequest(**batch_request),
-        expectation_suite_name="raw_suite"  # check the name by: CLI -> great_expectations suite list
+        expectation_suite_name=suite_name  # check the name by: CLI -> great_expectations suite list
     )
     
     # Validate the batch
