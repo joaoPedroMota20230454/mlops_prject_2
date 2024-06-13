@@ -1,7 +1,7 @@
 # MLOps Project
 
 Group C
--------------------------------
+----------------------------
 André Filipe Silva - 20230972
 
 Diogo Almeida - 20230737
