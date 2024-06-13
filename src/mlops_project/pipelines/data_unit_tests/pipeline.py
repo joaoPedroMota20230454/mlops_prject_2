@@ -7,7 +7,10 @@ def create_pipeline(**kwargs) -> Pipeline:
         [
             node(
                 func=test_data,
-                inputs="raw_data",
+                inputs=dict(
+                    df='raw_data',
+                    build_data_docs='params:build_data_docs'
+                ),
                 outputs="validated_data",
                 name="data_unit_tests_node",
             ),
