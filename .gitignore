@@ -1,6 +1,7 @@
 # custom ignores
 example/
 todo.txt
+*credentials*
 
 
 # Byte-compiled / optimized / DLL files
