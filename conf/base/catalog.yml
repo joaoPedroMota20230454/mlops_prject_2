@@ -62,13 +62,13 @@ y_test_cleaned:
 
 
 # **************************************
-# Data Testing After Cleaning Catalog
+# Feature Engineering Catalog
 # **************************************
 
-X_train_cleaned_validated:
+X_train_feturized:
   type: pandas.CSVDataset
-  filepath: "data/03_primary/X_train_cleaned_validated.csv"
+  filepath: "data/04_feature/X_train_featurized.csv"
 
-X_test_cleaned_validated:
+X_test_feturized:
   type: pandas.CSVDataset
-  filepath: "data/03_primary/X_test_cleaned_validated.csv"
+  filepath: "data/04_feature/X_test_featurized.csv"

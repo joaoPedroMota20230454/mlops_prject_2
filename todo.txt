@@ -1,0 +1,26 @@
+Revamp existing code:
+> enhance exp. and cleaning notebook
+> add more data unit tests
+> ??? it seems hopsworks allows us to pass an expectation suite. However I believe that having more control by adding the data unit tests in the pipeline is better (more explicit, easier to debug, etc...)
+
+To add:
+> feature engineering
+> model development / model evaluation / mlflow
+> feature store
+> data drift
+> unit tests with pytest
+> streamlit (or any additional bonus tech.)
+> more cleaning like MV imputation
+> HPT with optuna
+> why is git not ignoring the credentials.yml even though it's in the ignore file?
+> we are dropping so many rows during cleaning that we will need to have a way to handle them during model predictions, e.g. if we drop rows where diag. is '?' what do we do when when we see them in new data? For simplicity's sake we are better off by replacing them by nulls and then impute the nulls.
+> logging
+
+
+Questions for the Teacher:
+> where to place the feature store?
+> where to place the data to check for drift?
+> should we create more data folders? or can we send different data, at different stages to the same folder, e.g. send clean data and validated-clean data to folder 03_primary?
+> what goes into the settings.py file under the src/<project name> dir.?
+> should model development i.e. trying out several models with several parameter combinations, be done inside the pipeline or in a separate notebook (also with ml flow tracking)?
+> should we add an expectation suite to the feature store or should we leave it in the pipeline?

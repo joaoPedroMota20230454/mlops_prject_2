@@ -13,7 +13,11 @@ def drop_unwanted_columns(df: pd.DataFrame) -> pd.DataFrame:
         pd.DataFrame: Dataframe with columns dropped.
     """
 
-    columns_to_drop = ["weight", "payer_code", "medical_specialty"]
+    columns_to_drop = [
+        "weight",
+        "payer_code",
+        "medical_specialty",
+        "patient_nbr"]
 
     df = df.drop(columns=columns_to_drop, axis=1)
     return df
@@ -183,7 +187,7 @@ def encode_diabetes_columns(df: pd.DataFrame) -> pd.DataFrame:
     """
     dict_diabetes_med = {"No": 0, "Yes": 1}
 
-    df["change"] = df["change"].replace(dict_diabetes_med)
+    df["diabetesMed"] = df["diabetesMed"].replace(dict_diabetes_med)
 
     dict_change_transform = {"No": 0, "Ch": 1}
 

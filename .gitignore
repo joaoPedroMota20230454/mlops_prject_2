@@ -1,7 +1,7 @@
 # custom ignores
 example/
-todo.txt
-*credentials*
+# todo.txt
+conf/local/credentials.yml
 
 
 # Byte-compiled / optimized / DLL files

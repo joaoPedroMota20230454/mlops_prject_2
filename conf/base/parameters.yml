@@ -6,6 +6,14 @@ random_state: 42
 
 
 # *****************************
+# Data Split Parameters
+# *****************************
+
+target_column: "readmitted"
+test_size: 0.3
+
+
+# *****************************
 # Data unit Tests Parameters
 # before and after cleaning
 # *****************************
@@ -18,16 +26,15 @@ raw_datasource_name: "raw_datasource"
 raw_suite_name: "raw_suite"
 raw_data_asset_name: "diabetic_data"
 
-# after cleaning
+# after cleaning and feature engineering
 clean_datasource_name: "clean_datasource"
 clean_suite_name: "clean_suite"
 X_train_cleaned_data_asset_name: "X_train_cleaned"
 X_test_cleaned_data_asset_name: "X_test_cleaned"
 
 
-# *****************************
-# Data Split Parameters
-# *****************************
+# **********************************
+# FE + Data Unit Tests Parameters
+# **********************************
 
-target_column: "readmitted"
-test_size: 0.3
+upload_to_feature_store: False
