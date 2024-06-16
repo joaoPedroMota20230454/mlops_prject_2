@@ -64,7 +64,7 @@ def best_n_features(X_train:pd.DataFrame, y_train:pd.Series, parameters:Dict[str
         except:
             classifier = RandomForestClassifier(**parameters["baseline_model_params"])
         rfe = RFE(classifier, n_features_to_select=parameters["nr_features"])
-        rfe = rfe.fit(X_train, y_train)
+        rfe = rfe.fit(X_train, np.ravel(y_train))
         most_important_features = rfe.get_support(1)
         X_cols = X_train.columns[most_important_features].tolist()
     return X_cols

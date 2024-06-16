@@ -25,6 +25,7 @@ def register_pipelines() -> Dict[str, Pipeline]:
         "__default__": data_unit_tests_pipeline + \
             data_split_pipeline + \
                 data_cleaning_pipeline + \
-                    feature_engineering_pipeline
+                    feature_engineering_pipeline +\
+                        feature_selection_pipeline
     }
 # 
