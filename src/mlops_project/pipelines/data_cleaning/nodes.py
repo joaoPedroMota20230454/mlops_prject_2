@@ -1,3 +1,4 @@
+from typing import Tuple
 import pandas as pd
 import numpy as np
 
@@ -357,16 +358,19 @@ def fix_readmitted(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-def clean_X(df: pd.DataFrame) -> pd.DataFrame:
+def clean_df(X: pd.DataFrame, y: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame]:
     """
-    Cleans the feature data, i.e. no target feature.
+    Cleans the data.
 
     Args:
-        df: pd.DataFrame: Dataframe to clean.
-
+        X: pd.DataFrame: Features.
+        y: pd.DataFrame: Target.
+    
     Returns:
-        pd.DataFrame: Cleaned dataframe.
+
     """
+    
+    df = X.merge(y, left_index=True, right_index=True)
 
     cleaning_functions = [
         drop_unwanted_columns,
@@ -377,29 +381,18 @@ def clean_X(df: pd.DataFrame) -> pd.DataFrame:
         encode_medication_columns,
         encode_diabetes_columns,
         encode_test_results,
+        fix_readmitted
     ]
 
     for func in cleaning_functions:
         df = func(df)
 
-
     # map diagnosis to bins
     df["diag_1"] = df["diag_1"].apply(map_diagnosis_to_bin)
     df["diag_2"] = df["diag_2"].apply(map_diagnosis_to_bin)
     df["diag_3"] = df["diag_3"].apply(map_diagnosis_to_bin)
+    
+    X  = df.drop(columns=["readmitted"])
+    y = df["readmitted"]
 
-    return df
-
-
-def clean_y(df: pd.DataFrame) -> pd.DataFrame:
-    """
-    Cleans the target data.
-
-    Args:
-        df: pd.DataFrame: Dataframe to clean.
-
-    Returns:
-        pd.DataFrame: Cleaned dataframe.
-    """
-
-    return fix_readmitted(df)
+    return X, y
