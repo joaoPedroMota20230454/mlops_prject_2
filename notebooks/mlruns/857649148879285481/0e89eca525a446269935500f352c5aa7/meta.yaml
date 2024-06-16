@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/joaop/Desktop/Mestrado/1%C2%BA%20Ano/2%C2%BA%20Semestre/MLOps/Laborat%C3%B3rio%20de%20MLOps/projeto-mlops/notebooks/mlruns/857649148879285481/0e89eca525a446269935500f352c5aa7/artifacts
+end_time: 1718493108644
+entry_point_name: ''
+experiment_id: '857649148879285481'
+lifecycle_stage: active
+run_id: 0e89eca525a446269935500f352c5aa7
+run_name: wistful-rat-539
+run_uuid: 0e89eca525a446269935500f352c5aa7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718493107456
+status: 3
+tags: []
+user_id: joaop

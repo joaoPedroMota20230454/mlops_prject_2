@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/fmppo/Desktop/MSDSAA/Y1/S2/MLOps/mlops-group-project-23-24/mlruns/337532007981365636/a4c44c06d9f345798466e3b1ba30198e/artifacts
+end_time: 1718494215558
+entry_point_name: ''
+experiment_id: '337532007981365636'
+lifecycle_stage: active
+run_id: a4c44c06d9f345798466e3b1ba30198e
+run_name: bouncy-flea-286
+run_uuid: a4c44c06d9f345798466e3b1ba30198e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718494214616
+status: 3
+tags: []
+user_id: joaop

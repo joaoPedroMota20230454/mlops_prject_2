@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/joaop/Desktop/Mestrado/1%C2%BA%20Ano/2%C2%BA%20Semestre/MLOps/Laborat%C3%B3rio%20de%20MLOps/projeto-mlops/notebooks/mlruns/857649148879285481/5356ff3ceb424508a3246ad2dfbfbee7/artifacts
+end_time: 1718493209031
+entry_point_name: ''
+experiment_id: '857649148879285481'
+lifecycle_stage: active
+run_id: 5356ff3ceb424508a3246ad2dfbfbee7
+run_name: whimsical-tern-219
+run_uuid: 5356ff3ceb424508a3246ad2dfbfbee7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718493208390
+status: 3
+tags: []
+user_id: joaop

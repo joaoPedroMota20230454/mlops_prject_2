@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/joaop/Desktop/Mestrado/1%C2%BA%20Ano/2%C2%BA%20Semestre/MLOps/Laborat%C3%B3rio%20de%20MLOps/projeto-mlops/notebooks/mlruns/640548073926469409/5fd3c8b0c57e4a578cf1b79572cbd9d8/artifacts
+end_time: 1718493118111
+entry_point_name: ''
+experiment_id: '640548073926469409'
+lifecycle_stage: active
+run_id: 5fd3c8b0c57e4a578cf1b79572cbd9d8
+run_name: RandomForestClassifier on notebook
+run_uuid: 5fd3c8b0c57e4a578cf1b79572cbd9d8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718493096562
+status: 4
+tags: []
+user_id: joaop

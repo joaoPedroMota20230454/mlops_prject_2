@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/joaop/Desktop/Mestrado/1%C2%BA%20Ano/2%C2%BA%20Semestre/MLOps/Laborat%C3%B3rio%20de%20MLOps/projeto-mlops/notebooks/mlruns/857649148879285481/445f6d584214443b903738823e2579a0/artifacts
+end_time: 1718491134294
+entry_point_name: ''
+experiment_id: '857649148879285481'
+lifecycle_stage: active
+run_id: 445f6d584214443b903738823e2579a0
+run_name: masked-slug-215
+run_uuid: 445f6d584214443b903738823e2579a0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718491133319
+status: 3
+tags: []
+user_id: joaop

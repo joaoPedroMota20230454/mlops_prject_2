@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/joaop/Desktop/Mestrado/1%C2%BA%20Ano/2%C2%BA%20Semestre/MLOps/Laborat%C3%B3rio%20de%20MLOps/projeto-mlops/notebooks/mlruns/857649148879285481/b8b42e30e55344069576da8f1e2a87a9/artifacts
+end_time: 1718493211944
+entry_point_name: ''
+experiment_id: '857649148879285481'
+lifecycle_stage: active
+run_id: b8b42e30e55344069576da8f1e2a87a9
+run_name: smiling-shark-954
+run_uuid: b8b42e30e55344069576da8f1e2a87a9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718493211108
+status: 3
+tags: []
+user_id: joaop

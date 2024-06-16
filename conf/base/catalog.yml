@@ -63,12 +63,18 @@ y_test_cleaned:
 
 # **************************************
 # Feature Engineering Catalog
-# **************************************
+# **************************************X_train_featurized
 
-X_train_feturized:
+X_train_featurized:
   type: pandas.CSVDataset
   filepath: "data/04_feature/X_train_featurized.csv"
 
-X_test_feturized:
+X_test_featurized:
   type: pandas.CSVDataset
   filepath: "data/04_feature/X_test_featurized.csv"
+
+best_columns:
+  type: kedro_mlflow.io.artifacts.MlflowArtifactDataset
+  dataset:
+    type: pickle.PickleDataset
+    filepath: data/06_models/best_cols.pkl

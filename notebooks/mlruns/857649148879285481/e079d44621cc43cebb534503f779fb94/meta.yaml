@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/joaop/Desktop/Mestrado/1%C2%BA%20Ano/2%C2%BA%20Semestre/MLOps/Laborat%C3%B3rio%20de%20MLOps/projeto-mlops/notebooks/mlruns/857649148879285481/e079d44621cc43cebb534503f779fb94/artifacts
+end_time: 1718491163948
+entry_point_name: ''
+experiment_id: '857649148879285481'
+lifecycle_stage: active
+run_id: e079d44621cc43cebb534503f779fb94
+run_name: loud-eel-283
+run_uuid: e079d44621cc43cebb534503f779fb94
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718491151895
+status: 3
+tags: []
+user_id: joaop

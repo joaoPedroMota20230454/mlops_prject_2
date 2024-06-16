@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/fmppo/Desktop/MSDSAA/Y1/S2/MLOps/mlops-group-project-23-24/mlruns/337532007981365636/d05b4207e2ea4762ad392d885c783454/artifacts
+end_time: 1718494221853
+entry_point_name: ''
+experiment_id: '337532007981365636'
+lifecycle_stage: active
+run_id: d05b4207e2ea4762ad392d885c783454
+run_name: blushing-gnat-177
+run_uuid: d05b4207e2ea4762ad392d885c783454
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718494219980
+status: 3
+tags: []
+user_id: joaop

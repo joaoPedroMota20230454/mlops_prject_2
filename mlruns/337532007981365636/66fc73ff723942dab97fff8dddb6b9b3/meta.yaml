@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/fmppo/Desktop/MSDSAA/Y1/S2/MLOps/mlops-group-project-23-24/mlruns/337532007981365636/66fc73ff723942dab97fff8dddb6b9b3/artifacts
+end_time: 1718494462931
+entry_point_name: ''
+experiment_id: '337532007981365636'
+lifecycle_stage: active
+run_id: 66fc73ff723942dab97fff8dddb6b9b3
+run_name: resilient-sow-10
+run_uuid: 66fc73ff723942dab97fff8dddb6b9b3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718494461233
+status: 3
+tags: []
+user_id: joaop

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/fmppo/Desktop/MSDSAA/Y1/S2/MLOps/mlops-group-project-23-24/mlruns/337532007981365636/a6b2079fe2504d1481ff12e4f59f184c/artifacts
+end_time: 1718494448942
+entry_point_name: ''
+experiment_id: '337532007981365636'
+lifecycle_stage: active
+run_id: a6b2079fe2504d1481ff12e4f59f184c
+run_name: enchanting-mouse-866
+run_uuid: a6b2079fe2504d1481ff12e4f59f184c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718494426330
+status: 3
+tags: []
+user_id: joaop

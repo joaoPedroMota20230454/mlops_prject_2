@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/joaop/Desktop/Mestrado/1%C2%BA%20Ano/2%C2%BA%20Semestre/MLOps/Laborat%C3%B3rio%20de%20MLOps/projeto-mlops/notebooks/mlruns/857649148879285481/502152b98aa144ae9f3666e2d6b73f0f/artifacts
+end_time: 1718493297227
+entry_point_name: ''
+experiment_id: '857649148879285481'
+lifecycle_stage: active
+run_id: 502152b98aa144ae9f3666e2d6b73f0f
+run_name: carefree-shark-654
+run_uuid: 502152b98aa144ae9f3666e2d6b73f0f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718493296060
+status: 3
+tags: []
+user_id: joaop

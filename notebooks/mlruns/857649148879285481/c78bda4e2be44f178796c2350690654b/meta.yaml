@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/joaop/Desktop/Mestrado/1%C2%BA%20Ano/2%C2%BA%20Semestre/MLOps/Laborat%C3%B3rio%20de%20MLOps/projeto-mlops/notebooks/mlruns/857649148879285481/c78bda4e2be44f178796c2350690654b/artifacts
+end_time: 1718493300193
+entry_point_name: ''
+experiment_id: '857649148879285481'
+lifecycle_stage: active
+run_id: c78bda4e2be44f178796c2350690654b
+run_name: victorious-midge-350
+run_uuid: c78bda4e2be44f178796c2350690654b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718493299115
+status: 3
+tags: []
+user_id: joaop

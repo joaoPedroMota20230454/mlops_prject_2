@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/fmppo/Desktop/MSDSAA/Y1/S2/MLOps/mlops-group-project-23-24/mlruns/337532007981365636/df6762b44edf4cdb9236c33297c5dcfc/artifacts
+end_time: 1718494216995
+entry_point_name: ''
+experiment_id: '337532007981365636'
+lifecycle_stage: active
+run_id: df6762b44edf4cdb9236c33297c5dcfc
+run_name: legendary-hog-310
+run_uuid: df6762b44edf4cdb9236c33297c5dcfc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718494215583
+status: 3
+tags: []
+user_id: joaop

@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/joaop/Desktop/Mestrado/1%C2%BA%20Ano/2%C2%BA%20Semestre/MLOps/Laborat%C3%B3rio%20de%20MLOps/projeto-mlops/notebooks/mlruns/857649148879285481/8eb030cce16d4f958d73c2ca77ed7c5a/artifacts
+end_time: 1718491151883
+entry_point_name: ''
+experiment_id: '857649148879285481'
+lifecycle_stage: active
+run_id: 8eb030cce16d4f958d73c2ca77ed7c5a
+run_name: skittish-shrike-339
+run_uuid: 8eb030cce16d4f958d73c2ca77ed7c5a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718491151135
+status: 3
+tags: []
+user_id: joaop

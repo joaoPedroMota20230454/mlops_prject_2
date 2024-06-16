@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/fmppo/Desktop/MSDSAA/Y1/S2/MLOps/mlops-group-project-23-24/mlruns/337532007981365636/27c8930066a8489e90d11bf80f1a5a2f/artifacts
+end_time: 1718494460466
+entry_point_name: ''
+experiment_id: '337532007981365636'
+lifecycle_stage: active
+run_id: 27c8930066a8489e90d11bf80f1a5a2f
+run_name: luxuriant-lark-170
+run_uuid: 27c8930066a8489e90d11bf80f1a5a2f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718494457833
+status: 3
+tags: []
+user_id: joaop

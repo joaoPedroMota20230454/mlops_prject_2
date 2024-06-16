@@ -85,6 +85,132 @@ def drop_unknown_diagnosis(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
+def map_diagnosis_to_bin(diagnosis):
+    if diagnosis.startswith(('E', 'V')):
+        return 49
+    if "NO_DIAGNOSIS" in diagnosis:
+        return 0
+    diagnosis_full = diagnosis.split(".")
+    diagnosis = int(diagnosis_full[0])
+    if 1 <= diagnosis <= 139:
+        return 1
+    elif 140 <= diagnosis <= 239:
+        return 2
+    elif 240 <= diagnosis <= 249:
+        return 3
+    elif diagnosis == 250:
+        list_of_numbers = []
+        if len(diagnosis_full) == 2:
+            for letter in diagnosis_full[1]:
+                list_of_numbers.append(letter)
+        if len(list_of_numbers) == 0:
+            return 24
+        elif len(list_of_numbers) == 1:
+            if list_of_numbers[0] == "0":
+                return 25
+            elif list_of_numbers[0] == "1":
+                return 26
+            elif list_of_numbers[0] == "2":
+                return 27
+            elif list_of_numbers[0] == "3":
+                return 28
+            elif list_of_numbers[0] == "4":
+                return 29
+            elif list_of_numbers[0] == "5":
+                return 30
+            elif list_of_numbers[0] == "6":
+                return 31
+            elif list_of_numbers[0] == "7":
+                return 32
+            elif list_of_numbers[0] == "8":
+                return 33
+            elif list_of_numbers[0] == "9":
+                return 34
+        else:
+            if list_of_numbers[0] == "0":
+                if list_of_numbers[1] == "0" or list_of_numbers[1] == "1":
+                    return 4
+                else:
+                    return 5
+            elif list_of_numbers[0] == "1":
+                if list_of_numbers[1] == "0" or list_of_numbers[1] == "1":
+                    return 6
+                else:
+                    return 7
+            elif list_of_numbers[0] == "2":
+                if list_of_numbers[1] == "0" or list_of_numbers[1] == "1":
+                    return 8
+                else:
+                    return 9
+            elif list_of_numbers[0] == "3":
+                if list_of_numbers[1] == "0" or list_of_numbers[1] == "1":
+                    return 10
+                else:
+                    return 11
+            elif list_of_numbers[0] == "4":
+                if list_of_numbers[1] == "0" or list_of_numbers[1] == "1":
+                    return 12
+                else:
+                    return 13
+            elif list_of_numbers[0] == "5":
+                if list_of_numbers[1] == "0" or list_of_numbers[1] == "1":
+                    return 14
+                else:
+                    return 15
+            elif list_of_numbers[0] == "6":
+                if list_of_numbers[1] == "0" or list_of_numbers[1] == "1":
+                    return 16
+                else:
+                    return 17
+            elif list_of_numbers[0] == "7":
+                if list_of_numbers[1] == "0" or list_of_numbers[1] == "1":
+                    return 18
+                else:
+                    return 19
+            elif list_of_numbers[0] == "8":
+                if list_of_numbers[1] == "0" or list_of_numbers[1] == "1":
+                    return 20
+                else:
+                    return 21
+            elif list_of_numbers[0] == "9":
+                if list_of_numbers[1] == "0" or list_of_numbers[1] == "1":
+                    return 22
+                else:
+                    return 23
+    elif 251 <= diagnosis <= 279:
+        return 3
+    elif 280 <= diagnosis <= 289:
+        return 35
+    elif 290 <= diagnosis <= 319:
+        return 36
+    elif 320 <= diagnosis <= 389:
+        return 37
+    elif 390 <= diagnosis <= 459:
+        return 38
+    elif 460 <= diagnosis <= 519:
+        return 39
+    elif 520 <= diagnosis <= 579:
+        return 40
+    elif 580 <= diagnosis <= 629:
+        return 41
+    elif 630 <= diagnosis <= 679:
+        return 42
+    elif 680 <= diagnosis <= 709:
+        return 43
+    elif 710 <= diagnosis <= 739:
+        return 44
+    elif 740 <= diagnosis <= 759:
+        return 45
+    elif 760 <= diagnosis <= 779:
+        return 46
+    elif 780 <= diagnosis <= 799:
+        return 47
+    elif 800 <= diagnosis <= 999:
+        return 48
+
+
+
+
 def encode_race(df: pd.DataFrame) -> pd.DataFrame:
     """
     Encodes the 'race' column.
@@ -255,6 +381,12 @@ def clean_X(df: pd.DataFrame) -> pd.DataFrame:
 
     for func in cleaning_functions:
         df = func(df)
+
+
+    # map diagnosis to bins
+    df["diag_1"] = df["diag_1"].apply(map_diagnosis_to_bin)
+    df["diag_2"] = df["diag_2"].apply(map_diagnosis_to_bin)
+    df["diag_3"] = df["diag_3"].apply(map_diagnosis_to_bin)
 
     return df
 

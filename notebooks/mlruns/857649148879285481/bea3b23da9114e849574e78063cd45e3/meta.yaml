@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/joaop/Desktop/Mestrado/1%C2%BA%20Ano/2%C2%BA%20Semestre/MLOps/Laborat%C3%B3rio%20de%20MLOps/projeto-mlops/notebooks/mlruns/857649148879285481/bea3b23da9114e849574e78063cd45e3/artifacts
+end_time: 1718492484441
+entry_point_name: ''
+experiment_id: '857649148879285481'
+lifecycle_stage: active
+run_id: bea3b23da9114e849574e78063cd45e3
+run_name: popular-newt-525
+run_uuid: bea3b23da9114e849574e78063cd45e3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718492483790
+status: 3
+tags: []
+user_id: joaop

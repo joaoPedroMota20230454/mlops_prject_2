@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/joaop/Desktop/Mestrado/1%C2%BA%20Ano/2%C2%BA%20Semestre/MLOps/Laborat%C3%B3rio%20de%20MLOps/projeto-mlops/notebooks/mlruns/857649148879285481/f7900ac714ea45829f0b9efdca73119d/artifacts
+end_time: 1718493208376
+entry_point_name: ''
+experiment_id: '857649148879285481'
+lifecycle_stage: active
+run_id: f7900ac714ea45829f0b9efdca73119d
+run_name: stylish-goose-907
+run_uuid: f7900ac714ea45829f0b9efdca73119d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718493207736
+status: 3
+tags: []
+user_id: joaop
