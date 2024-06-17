@@ -1,0 +1,9 @@
+Questions:
+> where to place the feature store?
+> where to place the data to check for drift?
+> should we create more data folders? or can we send different data, at different stages to the same folder, e.g. send clean data and validated-clean data to folder 03_primary?
+> what goes into the settings.py file under the src/<project name> dir.?
+> should model development i.e. trying out several models with several parameter combinations, be done inside the pipeline or in a separate notebook (also with ml flow tracking)?
+> mlflow permission errors? seems server is in personal folder, e.g. c:/users/fmppo and not 'serverless'
+> how does the example project work? what are the batch pipelines? how come there are unconnected pipelines?
+> what are the versions of the libraries nannyml and evidently? got a lot of errors.
