@@ -14,6 +14,7 @@ To add:
 > why is git not ignoring the credentials.yml even though it's in the ignore file?
 > we are dropping so many rows during cleaning that we will need to have a way to handle them during model predictions, e.g. if we drop rows where diag. is '?' what do we do when when we see them in new data? For simplicity's sake we are better off by replacing them by nulls and then impute the nulls.
 > logging
+> feature selection not working because we have no champion model defined
 
 Pipelines:
 1. experimental pipeline
