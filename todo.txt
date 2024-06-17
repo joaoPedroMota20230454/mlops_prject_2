@@ -6,7 +6,6 @@ Revamp existing code:
 To add:
 > feature engineering
 > model development / model evaluation / mlflow
-> feature store
 > data drift
 > unit tests with pytest
 > streamlit (or any additional bonus tech.)
@@ -15,3 +14,9 @@ To add:
 > why is git not ignoring the credentials.yml even though it's in the ignore file?
 > we are dropping so many rows during cleaning that we will need to have a way to handle them during model predictions, e.g. if we drop rows where diag. is '?' what do we do when when we see them in new data? For simplicity's sake we are better off by replacing them by nulls and then impute the nulls.
 > logging
+
+Pipelines:
+1. experimental pipeline
+2. production pipeline
+3. data drift pipeline
+4. bonus: trigger model retraining pipeline
