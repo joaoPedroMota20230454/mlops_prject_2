@@ -9,11 +9,15 @@ def create_pipeline(**kwargs) -> Pipeline:
                 func=split_data,
                 inputs=dict(
                     df="validated_data",
-                    target="params:target_column",
-                    test_size="params:test_size",
+                    target_label="params:target_label",
+                    set_sizes="params:set_sizes",
+                    stratify="params:stratify",
                     random_state="params:random_state",
                 ),
-                outputs=["X_train", "X_test", "y_train", "y_test"],
+                outputs=[
+                    "X_train", "X_val", "X_test",
+                    "y_train", "y_val", "y_test"
+                ],
                 name="split_node",
             ),
         ]

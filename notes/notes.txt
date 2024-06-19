@@ -1,0 +1,3 @@
+> train-val-test split to avoid complexity. if only train-test we would need to tune our models using CV and, to avoid data leakage, we would need to tune entire pipelines and not just the classifier. E.g. say we had numeric and categorical variables: we would need to 1st tune a column transformer to impute numeric and categorical separetely. For the numeric we might add a scaler, and then at the end have the classifier.... would be quite bothersome.
+
+> 

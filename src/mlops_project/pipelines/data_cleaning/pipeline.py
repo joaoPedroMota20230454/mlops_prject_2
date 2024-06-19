@@ -15,6 +15,12 @@ def create_pipeline(**kwargs):
             ),
             node(
                 clean_df,
+                inputs=["X_val", "y_val"],
+                outputs=["X_val_cleaned", "y_val_cleaned"],
+                name="X_val_cleaning_node",
+            ),
+            node(
+                clean_df,
                 inputs=["X_test", "y_test"],
                 outputs=["X_test_cleaned", "y_test_cleaned"],
                 name="X_test_cleaning_node",

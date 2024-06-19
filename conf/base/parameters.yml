@@ -9,8 +9,9 @@ random_state: 42
 # Data Split Parameters
 # *****************************
 
-target_column: "readmitted"
-test_size: 0.3
+target_label: "readmitted"
+set_sizes: (0.6, 0.2, 0.2)
+stratify: True
 
 
 # *****************************
@@ -33,21 +34,33 @@ X_train_cleaned_data_asset_name: "X_train_cleaned"
 X_test_cleaned_data_asset_name: "X_test_cleaned"
 
 
-# **********************************
-# FE + Data Unit Tests Parameters
-# **********************************
+# *****************************
+# FE + Data Unit Tests
+# Parameters
+# *****************************
 
 upload_to_feature_store: False
-feature_selection: "rfe"
 
-# **********************************
-# Feature Selection
-# **********************************
-baseline_model_params:
+# *****************************
+# Feature Selection Parameters
+# *****************************
+
+# can be "rfe" or "all" or "manual"
+# if "manual" then specify the features in the list below
+feature_selection: "rfe"
+manual_features: []
+
+fs_model_params:
   n_estimators: 100
   max_depth: 6
   max_features: 20
   random_state: 42
 
-
 nr_features: 12
+
+
+# *****************************
+# Model Selection Parameters
+# *****************************
+
+n_trials: 10

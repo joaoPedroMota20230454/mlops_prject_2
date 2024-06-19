@@ -17,6 +17,15 @@ def create_pipeline(**kwargs):
             node(
                 add_features,
                 inputs=dict(
+                    df="X_val_cleaned",
+                    upload_to_feature_store="params:upload_to_feature_store",
+                ),
+                outputs="X_val_featurized",
+                name="X_val_feature_engineering_node",
+            ),
+            node(
+                add_features,
+                inputs=dict(
                     df="X_test_cleaned",
                     upload_to_feature_store="params:upload_to_feature_store",
                 ),

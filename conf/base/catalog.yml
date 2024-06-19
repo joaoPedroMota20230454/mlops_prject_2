@@ -16,7 +16,7 @@ raw_data:
 
 validated_data:
   type: pandas.CSVDataset
-  filepath: "data/02_intermediate/diabetic_data_validated.csv"
+  filepath: "data/02_valid/diabetic_data_validated.csv"
 
 
 # ******************************
@@ -25,19 +25,27 @@ validated_data:
 
 X_train:
   type: pandas.CSVDataset
-  filepath: "data/03_primary/X_train.csv"
+  filepath: "data/03_split/X_train.csv"
+
+X_val:
+  type: pandas.CSVDataset
+  filepath: "data/03_split/X_val.csv"
 
 X_test:
   type: pandas.CSVDataset
-  filepath: "data/03_primary/X_test.csv"
+  filepath: "data/03_split/X_test.csv"
 
 y_train:
   type: pandas.CSVDataset
-  filepath: "data/03_primary/y_train.csv"
+  filepath: "data/03_split/y_train.csv"
+
+y_val:
+  type: pandas.CSVDataset
+  filepath: "data/03_split/y_val.csv"
 
 y_test:
   type: pandas.CSVDataset
-  filepath: "data/03_primary/y_test.csv"
+  filepath: "data/03_split/y_test.csv"
 
 
 # ******************************
@@ -46,35 +54,62 @@ y_test:
 
 X_train_cleaned:
   type: pandas.CSVDataset
-  filepath: "data/03_primary/X_train_cleaned.csv"
+  filepath: "data/04_clean/X_train_cleaned.csv"
+
+X_val_cleaned:
+  type: pandas.CSVDataset
+  filepath: "data/04_clean/X_val_cleaned.csv"
 
 X_test_cleaned:
   type: pandas.CSVDataset
-  filepath: "data/03_primary/X_test_cleaned.csv"
+  filepath: "data/04_clean/X_test_cleaned.csv"
 
 y_train_cleaned:
   type: pandas.CSVDataset
-  filepath: "data/03_primary/y_train_cleaned.csv"
+  filepath: "data/04_clean/y_train_cleaned.csv"
+
+y_val_cleaned:
+  type: pandas.CSVDataset
+  filepath: "data/04_clean/y_val_cleaned.csv"
 
 y_test_cleaned:
   type: pandas.CSVDataset
-  filepath: "data/03_primary/y_test_cleaned.csv"
+  filepath: "data/04_clean/y_test_cleaned.csv"
 
 
-# **************************************
+# ******************************
 # Feature Engineering Catalog
-# **************************************X_train_featurized
+# ******************************
 
 X_train_featurized:
   type: pandas.CSVDataset
-  filepath: "data/04_feature/X_train_featurized.csv"
+  filepath: "data/05_feature/X_train_featurized.csv"
+
+X_val_featurized:
+  type: pandas.CSVDataset
+  filepath: "data/05_feature/X_val_featurized.csv"
 
 X_test_featurized:
   type: pandas.CSVDataset
-  filepath: "data/04_feature/X_test_featurized.csv"
+  filepath: "data/05_feature/X_test_featurized.csv"
 
-best_columns:
-  type: kedro_mlflow.io.artifacts.MlflowArtifactDataset
-  dataset:
-    type: pickle.PickleDataset
-    filepath: data/06_models/best_cols.pkl
+
+# ******************************
+# Feature Selection Catalog
+# ******************************
+
+selected_features: 
+  type: PickleDataSet
+  filepath: "data/07_model_input/selected_features.pkl"
+
+X_train_selected:
+  type: pandas.CSVDataset
+  filepath: "data/07_model_input/X_train_selected.csv"
+
+X_val_selected:
+  type: pandas.CSVDataset
+  filepath: "data/07_model_input/X_val_selected.csv"
+
+X_test_selected:
+  type: pandas.CSVDataset
+  filepath: "data/07_model_input/X_test_selected.csv"
