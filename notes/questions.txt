@@ -1,4 +1,8 @@
-> we are sending our train and test data to the feature store separetely, should we do this
+> we are sending our train and test data to the feature store separetely, should we do this?
+
+> how to deal with overfitting inside the pipeline? currently (if you go into model selection) we are checking overfitting by comparing the f1 scores in the train+val and test sets. if the absolute difference is larger than .1 we consider it too much overfitting and 'discard' the model, i.e. cannot be best model
+
+> should we only have the champion model registered?
 
 > we've seen that whenever we create a new pipeline using the kedro CLI a new parameter file is also created, e.g. parameters_model_selection.yml, how to call these files in the pipelines?
 

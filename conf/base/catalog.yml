@@ -99,17 +99,34 @@ X_test_featurized:
 # ******************************
 
 selected_features: 
-  type: PickleDataSet
-  filepath: "data/07_model_input/selected_features.pkl"
+  type: pickle.PickleDataset
+  filepath: "data/06_model_input/selected_features.pkl"
 
 X_train_selected:
   type: pandas.CSVDataset
-  filepath: "data/07_model_input/X_train_selected.csv"
+  filepath: "data/06_model_input/X_train_selected.csv"
 
 X_val_selected:
   type: pandas.CSVDataset
-  filepath: "data/07_model_input/X_val_selected.csv"
+  filepath: "data/06_model_input/X_val_selected.csv"
 
 X_test_selected:
   type: pandas.CSVDataset
-  filepath: "data/07_model_input/X_test_selected.csv"
+  filepath: "data/06_model_input/X_test_selected.csv"
+
+
+# ******************************
+# Model Selection Catalog
+# ******************************
+
+# MlflowModelTrackingDataset: to load and save the model from the mlflow artifact store.
+# MlflowModelLocalFileSystemDataset: to load and save the model from the local file system.
+# MlflowArtifactDataset: to save your model both locally and remotely within the same run.
+# check this out: https://kedro-mlflow.readthedocs.io/en/stable/source/04_experimentation_tracking/04_version_models.html
+
+champion_model:
+  type: kedro_mlflow.io.artifacts.MlflowArtifactDataset
+  dataset:
+    type: kedro_mlflow.io.models.MlflowModelLocalFileSystemDataset
+    flavor: mlflow.sklearn
+    filepath: "data/08_models/champion_model"

@@ -10,7 +10,7 @@ random_state: 42
 # *****************************
 
 target_label: "readmitted"
-set_sizes: (0.6, 0.2, 0.2)
+set_sizes: [0.6, 0.2, 0.2]  # need to use list otherwise using "()" will assume it's a string
 stratify: True
 
 
@@ -56,11 +56,12 @@ fs_model_params:
   max_features: 20
   random_state: 42
 
-nr_features: 12
+n_features: 12
 
 
 # *****************************
 # Model Selection Parameters
 # *****************************
 
-n_trials: 10
+# TODO: change to 50
+n_trials: 1 

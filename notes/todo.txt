@@ -1,16 +1,19 @@
 most pressing:
 > in model selection:
-    - finish nodes
+    - load champion model
+    - replace champion model
     - finish pipelines
     - add to pipeline registry
+> model evaluation (for prod.)
+    - assess predictions of champion model (log in mlflow)
+> data drift
 
 
+> define a 'business oriented' metric instead of f1-score for the pos. class ANDRE PERGUNTAR AOS PAIS!!!
 > better cleaning
 > better expectation suites
 > more feature engineering
-> data drift
 > unit tests with pytest
-> streamlit (or any additional bonus tech.)
 > why is git not ignoring the credentials.yml even though it's in the ignore file?
 > we are dropping so many rows during cleaning that we will need to have a way to handle them during model predictions, e.g. if we drop rows where diag. is '?' what do we do when when we see them in new data? For simplicity's sake we are better off by replacing them by nulls and then impute the nulls.
 > logging
@@ -25,5 +28,7 @@ Pipelines:
 
 Bonus ideas:
 > trigger model retraining pipeline
-> pipeline documentation flow (i.e. with kedro viz)
 > to simulate a real scenario our raw data instead can come from a sqlite db instead of a csv file. (would need to add data ingestion pipeline + structure db + query db, should be easy)
+> package project in docker
+> pipeline documentation flow (i.e. with kedro viz)
+> streamlit (or any additional bonus tech.)

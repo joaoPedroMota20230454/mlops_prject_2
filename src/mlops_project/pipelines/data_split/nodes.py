@@ -18,7 +18,7 @@ def two_step_proportions(train_p, val_p, test_p):
         A tuple with the proportions needed for the
         train_test_split function in the two steps.
     """ 
-    return (test_p, 1-(train_p/(1-test_p)))
+    return test_p, 1-(train_p/(1-test_p))
 
 
 def split_data(
@@ -53,7 +53,7 @@ def split_data(
         X, y,
         test_size=test_size_1,
         shuffle=True,
-        stratify=y,
+        stratify=y if stratify else None,
         random_state=random_state
     )
 
@@ -61,7 +61,7 @@ def split_data(
         X_train_val, y_train_val,
         test_size=test_size_2,
         shuffle=True,
-        stratify=y_train_val,
+        stratify=y_train_val if stratify else None,
         random_state=random_state
     )
 
