@@ -130,3 +130,23 @@ champion_model:
     type: kedro_mlflow.io.models.MlflowModelLocalFileSystemDataset
     flavor: mlflow.sklearn
     filepath: "data/08_models/champion_model"
+
+
+
+# ******************************
+# Model Evaluation Catalog
+# ******************************
+df_with_predictions:
+  type: pandas.CSVDataSet
+  filepath: "data/09_reporting/df_with_predictions.csv"
+
+
+
+describe_servings:
+  type: pandas.CSVDataSet
+  filepath: "data/09_reporting/describe_servings.csv"
+
+
+model_metrics_on_production:
+  type: pickle.PickleDataset
+  filepath: "data/09_reporting/model_metric_on_production.pkl"

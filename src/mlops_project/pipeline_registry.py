@@ -6,7 +6,9 @@ from .pipelines import (
     data_cleaning,
     feature_engineering,
     feature_selection,
-    model_selection
+    model_selection,
+    model_evaluation,
+    data_drift,
 )
 
 
@@ -18,7 +20,8 @@ def register_pipelines() -> Dict[str, Pipeline]:
     feature_engineering_pipeline = feature_engineering.create_pipeline()
     feature_selection_pipeline = feature_selection.create_pipeline()
     model_selection_pipeline = model_selection.create_pipeline()
-    
+    model_evaluation_pipeline = model_evaluation.create_pipeline()
+    data_drift_pipeline = data_drift.create_pipeline()
     return {
         # common pipelines
         "data_unit_tests": data_unit_tests_pipeline,    
@@ -28,6 +31,9 @@ def register_pipelines() -> Dict[str, Pipeline]:
         "feature_selection": feature_selection_pipeline,
         "model_selection": model_selection_pipeline,
         
+        "model_evaluation": model_evaluation_pipeline,
+        "data_drift": data_drift_pipeline,
+
         # development pipeline
         "development": data_unit_tests_pipeline + \
             data_split_pipeline + \
