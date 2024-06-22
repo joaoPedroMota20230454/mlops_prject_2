@@ -1,4 +1,4 @@
-> we are sending our train and test data to the feature store separetely, should we do this?
+> we are sending our train and test data to the feature store separately, should we do this?
 
 > how to deal with overfitting inside the pipeline? currently (if you go into model selection) we are checking overfitting by comparing the f1 scores in the train+val and test sets. if the absolute difference is larger than .1 we consider it too much overfitting and 'discard' the model, i.e. cannot be best model
 
