@@ -14,7 +14,7 @@ def drop_unwanted_columns(df: pd.DataFrame) -> pd.DataFrame:
         pd.DataFrame: Dataframe with columns dropped.
     """
 
-    columns_to_drop = ["country"]
+    columns_to_drop = ["patient_nbr"]
 
     df = df.drop(columns=columns_to_drop, axis=1)
     return df
@@ -34,21 +34,6 @@ def encode_gender(df: pd.DataFrame) -> pd.DataFrame:
     gender_replace = {"Male": 0, "Female": 1, "Unknown/Invalid": 1}
 
     df["gender"] = df["gender"].replace(gender_replace)
-    return df
-
-def encode_change_in_meds_during_hosp(df: pd.DataFrame) -> pd.DataFrame:
-    """
-    Encodes the 'change_in_meds_during_hospitalization' column.
-
-    Args:
-        df: pd.DataFrame: Dataframe to replace tokens in.
-
-    Returns:
-        pd.DataFrame: Dataframe with tokens replaced.
-    """
-    change_replace = {"No": 0, "Ch": 1}
-    df["change_in_meds_during_hospitalization"] = df["change_in_meds_during_hospitalization"].replace(change_replace)
-    
     return df
 
 
@@ -385,7 +370,6 @@ def clean_df(X: pd.DataFrame, y: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFra
 
     cleaning_functions = [
         drop_unwanted_columns,
-         encode_change_in_meds_during_hosp,
         encode_gender,
         encode_age_bracket,
         drop_unknown_diagnosis,

@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/fmppo/Desktop/MSDSAA/Y1/S2/MLOps/mlops_prject_2/ml_artifacts/357444901871879466/b0a705ba353c4df09faff384eff0f131/artifacts
+deleted_time: 1719082515997
 end_time: 1718928717950
 entry_point_name: ''
 experiment_id: '357444901871879466'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: b0a705ba353c4df09faff384eff0f131
 run_name: model_selection
 run_uuid: b0a705ba353c4df09faff384eff0f131
