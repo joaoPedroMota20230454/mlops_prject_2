@@ -1,0 +1,17 @@
+digest: 6e4a531c
+name: dataset
+profile: '{"num_rows": 19622, "num_elements": 235464}'
+schema: '{"mlflow_colspec": [{"type": "long", "name": "age", "required": true}, {"type":
+  "long", "name": "admission_type_id", "required": true}, {"type": "long", "name":
+  "discharge_disposition_id", "required": true}, {"type": "long", "name": "admission_source_id",
+  "required": true}, {"type": "long", "name": "time_in_hospital", "required": true},
+  {"type": "long", "name": "num_lab_procedures", "required": true}, {"type": "long",
+  "name": "num_medications", "required": true}, {"type": "long", "name": "number_inpatient",
+  "required": true}, {"type": "long", "name": "diag_1", "required": true}, {"type":
+  "long", "name": "number_diagnoses", "required": true}, {"type": "long", "name":
+  "diabetesMed", "required": true}, {"type": "long", "name": "total_visits_in_previous_year",
+  "required": true}]}'
+source: '{"tags": {"mlflow.user": "andre", "mlflow.source.name": "C:\\Users\\andre\\OneDrive\\Documentos\\Nova
+  IMS\\1\u00ba ano\\2\u00ba Semestre\\MLOps\\Project\\mlops_prject_2\\project_env\\Scripts\\kedro",
+  "mlflow.source.type": "LOCAL"}}'
+source_type: code

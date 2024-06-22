@@ -1,0 +1,6 @@
+1. data_unit_tests
+2. data_split
+3. data_cleaning
+4. feature_engineering
+5. feature_selection
+6. model_selection

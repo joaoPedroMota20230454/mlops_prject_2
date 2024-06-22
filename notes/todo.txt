@@ -10,7 +10,7 @@ most pressing:
 
 
 > define a 'business oriented' metric instead of f1-score for the pos. class ANDRE PERGUNTAR AOS PAIS!!!
-> better cleaning
+> better cleaning (acrescentei "binary change in meds //andre 22-06 19.44h)
 > better expectation suites
 > more feature engineering
 > unit tests with pytest

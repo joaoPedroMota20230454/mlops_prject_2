@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/fmppo/Desktop/MSDSAA/Y1/S2/MLOps/mlops_prject_2/ml_artifacts/357444901871879466/7f2f21b7341648bdb109e255f21ba194/artifacts
+end_time: 1719080017816
+entry_point_name: ''
+experiment_id: '357444901871879466'
+lifecycle_stage: active
+run_id: 7f2f21b7341648bdb109e255f21ba194
+run_name: data_unit_tests
+run_uuid: 7f2f21b7341648bdb109e255f21ba194
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719080012785
+status: 3
+tags: []
+user_id: andre
