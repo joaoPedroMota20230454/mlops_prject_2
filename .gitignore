@@ -3,7 +3,6 @@ example/
 # todo.txt
 conf/local/credentials.yml
 
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

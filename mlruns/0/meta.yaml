@@ -1,6 +1,3 @@
-artifact_location: file:///C:/Users/fmppo/Desktop/MSDSAA/Y1/S2/MLOps/mlops_prject_2/ml_artifacts/0
-creation_time: 1718928628684
-experiment_id: '0'
-last_update_time: 1718928628684
-lifecycle_stage: active
-name: Default
+version https://git-lfs.github.com/spec/v1
+oid sha256:d838e23a6d351e9fcf52ff5458fef7211a50208d8759f88ccf2f69787b5c98bd
+size 254

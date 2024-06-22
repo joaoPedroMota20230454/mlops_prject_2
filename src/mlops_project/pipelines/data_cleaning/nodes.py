@@ -14,7 +14,10 @@ def drop_unwanted_columns(df: pd.DataFrame) -> pd.DataFrame:
         pd.DataFrame: Dataframe with columns dropped.
     """
 
-    columns_to_drop = ["patient_nbr"]
+    columns_to_drop = ["weight",
+        "payer_code",
+        "medical_specialty",
+        "patient_nbr"]
 
     df = df.drop(columns=columns_to_drop, axis=1)
     return df
@@ -75,9 +78,9 @@ def drop_unknown_diagnosis(df: pd.DataFrame) -> pd.DataFrame:
         pd.DataFrame: Dataframe with rows dropped.
     """
 
-    df = df.loc[df["diag_1"] != "?", :]
-    df = df.loc[df["diag_2"] != "?", :]
-    df = df.loc[df["diag_3"] != "?", :]
+    df = df[df["diag_1"] != "?"]
+    df = df[df["diag_2"] != "?"]
+    df = df[df["diag_3"] != "?"]
 
     return df
 

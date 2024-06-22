@@ -9,7 +9,7 @@ most pressing:
 > data drift
 
 
-> define a 'business oriented' metric instead of f1-score for the pos. class ANDRE PERGUNTAR AOS PAIS!!!
+> define a 'business oriented' metric instead of f1-score for the pos. class // ver metricas_readmissao.txt
 > better cleaning (acrescentei "binary change in meds //andre 22-06 19.44h)
 > better expectation suites
 > more feature engineering
