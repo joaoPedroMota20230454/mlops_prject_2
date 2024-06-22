@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1719080606255
+current_stage: None
+description: ''
+last_updated_timestamp: 1719080606255
+name: RandomForestClassifier
+run_id: abd457d6ab8e4147927208d0b57a1ca5
+run_link: ''
+source: file:///C:/Users/andre/OneDrive/Documentos/Nova IMS/1º ano/2º Semestre/MLOps/Project/mlops_prject_2/ml_artifacts/349641507374254647/abd457d6ab8e4147927208d0b57a1ca5/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///C:/Users/andre/OneDrive/Documentos/Nova IMS/1º ano/2º Semestre/MLOps/Project/mlops_prject_2/ml_artifacts/349641507374254647/abd457d6ab8e4147927208d0b57a1ca5/artifacts/model
+user_id: null
+version: 2

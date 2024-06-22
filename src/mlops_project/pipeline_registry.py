@@ -36,8 +36,13 @@ def register_pipelines() -> Dict[str, Pipeline]:
                         feature_selection_pipeline,
         
         # production pipeline
-        # "production": ''
+        "production": model_selection_pipeline,
         
-        # "__default__": ""  # kedro run (by default will run the __default__ pipeline)
+        # default pipeline
+        #"__default__": data_unit_tests_pipeline + \
+           # data_split_pipeline + \
+              #  data_cleaning_pipeline + \
+                #    feature_engineering_pipeline + \
+                    #    feature_selection_pipeline,  # kedro run (by default will run the __default__ pipeline)
         
     }

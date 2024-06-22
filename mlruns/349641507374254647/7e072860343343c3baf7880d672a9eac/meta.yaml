@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/andre/OneDrive/Documentos/Nova IMS/1º ano/2º Semestre/MLOps/Project/mlops_prject_2/ml_artifacts/349641507374254647/7e072860343343c3baf7880d672a9eac/artifacts
+end_time: 1719080605854
+entry_point_name: ''
+experiment_id: '349641507374254647'
+lifecycle_stage: active
+run_id: 7e072860343343c3baf7880d672a9eac
+run_name: GradientBoostingClassifier
+run_uuid: 7e072860343343c3baf7880d672a9eac
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719080579179
+status: 3
+tags: []
+user_id: andre

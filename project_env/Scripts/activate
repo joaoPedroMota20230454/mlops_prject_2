@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\andre\OneDrive\Documentos\Nova IMS\1º ano\2º Semestre\MLOps\Project\Repo\mlops_prject_2\project_env"
+VIRTUAL_ENV="C:\Users\andre\OneDrive\Documentos\Nova IMS\1º ano\2º Semestre\MLOps\Project\mlops_prject_2\project_env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

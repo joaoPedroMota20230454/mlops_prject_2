@@ -10,15 +10,18 @@ most pressing:
 
 
 > define a 'business oriented' metric instead of f1-score for the pos. class ANDRE PERGUNTAR AOS PAIS!!!
-> better cleaning
+> better cleaning (acrescentei "binary change in meds //andre 22-06 19.44h)
 > better expectation suites
 > more feature engineering
 > unit tests with pytest
 > why is git not ignoring the credentials.yml even though it's in the ignore file?
-> we are dropping so many rows during cleaning that we will need to have a way to handle them during model predictions, e.g. if we drop rows where diag. is '?' what do we do when when we see them in new data? For simplicity's sake we are better off by replacing them by nulls and then impute the nulls.
+> we are dropping so many rows during cleaning that we will need to have a way to handle them during model predictions,
+ e.g. if we drop rows where diag. is '?' what do we do when when we see them in new data? For simplicity's sake we
+  are better off by replacing them by nulls and then impute the nulls.
 > logging
 > in feature selection if using RFE add the possibility of using the curr. champion model as the model to test.
-> feature selection depends on the algorithm, whenever we choose an algo. and the function outputs a list with the chosen variables we will overwite the data in the 06_pruned folder. To track this we should use mlflow capabilities.
+> feature selection depends on the algorithm, whenever we choose an algo. and the function outputs a list with 
+the chosen variables we will overwite the data in the 06_pruned folder. To track this we should use mlflow capabilities.
 
 Pipelines:
 1. experimental pipeline
@@ -28,7 +31,8 @@ Pipelines:
 
 Bonus ideas:
 > trigger model retraining pipeline
-> to simulate a real scenario our raw data instead can come from a sqlite db instead of a csv file. (would need to add data ingestion pipeline + structure db + query db, should be easy)
+> to simulate a real scenario our raw data instead can come from a sqlite db instead of a csv file.
+ (would need to add data ingestion pipeline + structure db + query db, should be easy)
 > package project in docker
 > pipeline documentation flow (i.e. with kedro viz)
 > streamlit (or any additional bonus tech.)
