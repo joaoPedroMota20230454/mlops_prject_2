@@ -1,4 +1,4 @@
-#!C:\Users\andre\OneDrive\Documentos\Nova IMS\1º ano\2º Semestre\MLOps\Project\Repo\mlops_prject_2\project_env\Scripts\python.exe
+#!C:\Users\andre\OneDrive\Documentos\Nova IMS\1º ano\2º Semestre\MLOps\Project\mlops_prject_2\project_env\Scripts\python.exe
 
 #
 # Licensed to the Apache Software Foundation (ASF) under one or more
