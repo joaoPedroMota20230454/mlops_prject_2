@@ -1,5 +1,0 @@
-python.exe -m venv project_env
-pip install requirements.txt
-python.exe -m ipykernel install --user --name=project_env
-pip install nannyml==0.10.6 --no-dependencies
-pip install kedro-viz
