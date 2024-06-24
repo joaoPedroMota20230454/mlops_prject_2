@@ -6,8 +6,21 @@ overfitting and 'discard' the model, i.e. cannot be best model
 
 > should we only have the champion model registered?
 
-> we've seen that whenever we create a new pipeline using the kedro CLI a new parameter file is also created,
- e.g. parameters_model_selection.yml, how to call these files in the pipelines?
+> is prod fully independent from dev?
+
+> in prod. do we have access to the true labels? i.e. if yes we could also evaluate our model, but if not then the prod pipelines will end in a prediction step?
+
+# DONT FORGET TO SAVE SKLEARN SCALERS / IMPUTERS / ETC AND LOAD THEM DURING INFERENCE
+
+> should we save the predictions history? if yes, how? should we track it with mlflow
+
+> if we have no labels in prod then how to check for label drift?
+
+> where should we keep the "new data" the data not using for training but for predicting and checking for drift?
+
+> is data drift its own pipeline or should it be connected to dev and/or prod pipelines?
+
+> where in the pipelines to add the explainability stuff? should we add a pipeline after champion selection?
 
 > how would the pipelines change if we were using models not just from sklearn? ans: by wrapping models in base estimators 
 and classifier mixin:

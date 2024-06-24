@@ -47,7 +47,7 @@ upload_to_feature_store: False
 
 # can be "rfe" or "all" or "manual"
 # if "manual" then specify the features in the list below
-feature_selection: "rfe"
+feature_selection: "all"
 manual_features: []
 
 fs_model_params:
@@ -65,3 +65,10 @@ n_features: 12
 
 # TODO: change to 50
 n_trials: 1 
+
+
+# *****************************
+# Model Prediction Parameters
+# *****************************
+
+predict_proba: False

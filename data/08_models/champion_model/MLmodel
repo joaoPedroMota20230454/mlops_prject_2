@@ -6,13 +6,13 @@ flavors:
     loader_module: mlflow.sklearn
     model_path: model.pkl
     predict_fn: predict
-    python_version: 3.10.11
+    python_version: 3.10.14
   sklearn:
     code: null
     pickled_model: model.pkl
     serialization_format: cloudpickle
-    sklearn_version: 1.4.2
+    sklearn_version: 1.4.0
 mlflow_version: 2.11.3
-model_size_bytes: 110441
-model_uuid: b21624dc6d5a45f9a3c818b70f85ce1a
-utc_time_created: '2024-06-22 22:02:10.158990'
+model_size_bytes: 323424
+model_uuid: 5c914c1939c441848110bbac152f6186
+utc_time_created: '2024-06-24 12:06:30.837153'
