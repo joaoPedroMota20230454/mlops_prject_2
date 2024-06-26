@@ -3,6 +3,9 @@ example/
 # todo.txt
 conf/local/credentials.yml
 
+# Virtual environment
+project_env/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
