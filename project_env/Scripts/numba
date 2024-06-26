@@ -1,8 +1,0 @@
-#!C:\Users\andre\OneDrive\Documentos\Nova IMS\1º ano\2º Semestre\MLOps\Project\mlops_prject_2\project_env\Scripts\python.exe
-# -*- coding: UTF-8 -*-
-from __future__ import print_function, division, absolute_import
-
-from numba.misc.numba_entry import main
-
-if __name__ == "__main__":
-    main()
