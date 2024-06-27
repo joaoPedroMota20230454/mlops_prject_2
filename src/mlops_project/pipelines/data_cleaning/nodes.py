@@ -7,6 +7,7 @@ import numpy as np
 
 def drop_unwanted_columns(df: pd.DataFrame) -> pd.DataFrame:
     """
+    TESTED? YES
     Columns to drop straight away.
 
     Args:
@@ -27,6 +28,7 @@ def drop_unwanted_columns(df: pd.DataFrame) -> pd.DataFrame:
 
 def encode_gender(df: pd.DataFrame) -> pd.DataFrame:
     """
+    TESTED? YES
     Encodes the 'gender' column.
 
     Args:
@@ -44,6 +46,7 @@ def encode_gender(df: pd.DataFrame) -> pd.DataFrame:
 
 def encode_age_bracket(df: pd.DataFrame) -> pd.DataFrame:
     """
+    TESTED? YES
     Ordinal encoding of the 'age' column.
 
     Args:
@@ -88,6 +91,16 @@ def drop_unknown_diagnosis(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def map_diagnosis_to_bin(diagnosis):
+    """
+    TESTED? YES
+    Map diagnosis to bins
+
+    ### Args:
+        - `diagnosis (str)`: Diagnosis code.
+
+    ### Returns:
+        - `int`: Diagnosis bin.
+    """
     if diagnosis.startswith(('E', 'V')):
         return 49
     if "NO_DIAGNOSIS" in diagnosis:
@@ -215,6 +228,7 @@ def map_diagnosis_to_bin(diagnosis):
 
 def encode_race(df: pd.DataFrame) -> pd.DataFrame:
     """
+    TESTED? YES
     Encodes the 'race' column.
 
     Args:
@@ -241,6 +255,7 @@ def encode_race(df: pd.DataFrame) -> pd.DataFrame:
 
 def encode_medication_columns(df: pd.DataFrame) -> pd.DataFrame:
     """
+    TESTED? YES
     Encodes the medication columns. Additioanlly, drops columns
     with only one unique value.
 
@@ -305,6 +320,7 @@ def encode_medication_columns(df: pd.DataFrame) -> pd.DataFrame:
 
 def encode_diabetes_columns(df: pd.DataFrame) -> pd.DataFrame:
     """
+    TESTED? YES
     Encodes the diabetes columns.
 
     Args:
@@ -325,6 +341,7 @@ def encode_diabetes_columns(df: pd.DataFrame) -> pd.DataFrame:
 
 def encode_test_results(df: pd.DataFrame) -> pd.DataFrame:
     """
+    TESTED? YES
     Encodes the test results columns.
 
     Args:
@@ -368,11 +385,8 @@ def clean_df(X: pd.DataFrame, y: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFra
         y: pd.DataFrame: Target.
     
     Returns:
-
     """
-    
     df = X.merge(y, left_index=True, right_index=True)
-
     cleaning_functions = [
         drop_unwanted_columns,
         encode_gender,
@@ -395,5 +409,4 @@ def clean_df(X: pd.DataFrame, y: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFra
     
     X  = df.drop(columns=["readmitted"])
     y = df["readmitted"]
-
     return X, y

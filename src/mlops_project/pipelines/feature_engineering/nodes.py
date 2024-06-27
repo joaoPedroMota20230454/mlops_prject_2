@@ -77,19 +77,23 @@ def add_features(df: pd.DataFrame, upload_to_feature_store: bool) -> pd.DataFram
         pd.DataFrame: Engineered dataframe.
     """
 
+
+    df_copy = df.copy()
+
     fe_functions = [
         total_visits_in_previous_year,
     ]
-
-    for func in fe_functions:
-        df = func(df)
     
+    # print("total_visits_in_previous_year" in df.columns)
+    for func in fe_functions:
+        df_copy = func(df_copy)
+    # print("total_visits_in_previous_year" in df.columns)
     if upload_to_feature_store:
         # TODO should we add them as params??
         SETTINGS_STORE = read_credentials()["SETTINGS_STORE"]
         suite = load_expectation_suite("clean_suite")
         to_feature_store(
-            data=df,
+            data=df_copy,
             group_name="diabetes",
             feature_group_version=1,
             description="Diabetes dataset with additional features",
@@ -98,4 +102,4 @@ def add_features(df: pd.DataFrame, upload_to_feature_store: bool) -> pd.DataFram
             SETTINGS=SETTINGS_STORE
         )
 
-    return df
+    return df_copy

@@ -37,6 +37,7 @@ def register_model(
     model_alias: str = None
 ) -> None:
     """
+
     Register a model in the MLflow Model Registry.
     
     Args:
@@ -49,7 +50,6 @@ def register_model(
     mlflow.register_model(
         model_path, model_name
     )
-    
     if any(var is not None for var in [model_tag, model_version, model_alias]):
         client = MlflowClient()
     
@@ -144,6 +144,7 @@ def optuna_objective(
         n_estimators = trial.suggest_int('n_estimators', 10, 100)
         max_depth = trial.suggest_categorical('max_depth', [None, 5, 10])
         class_weight = trial.suggest_categorical('class_weight', ['balanced', 'balanced_subsample', None])
+        # RANDOM STATE? SERÁ NECESSÁRIO?
         
         model.set_params(
             n_estimators=n_estimators,
@@ -155,6 +156,7 @@ def optuna_objective(
         n_estimators = trial.suggest_int('n_estimators', 10, 100)
         learning_rate = trial.suggest_loguniform('learning_rate', 0.01, 1)
         max_depth = trial.suggest_categorical('max_depth', [3, 5, 10])
+        # RANDOM STATE? SERÁ NECESSÁRIO?
         
         model.set_params(
             n_estimators=n_estimators,
